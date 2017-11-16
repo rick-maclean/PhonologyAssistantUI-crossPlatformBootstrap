@@ -1,0 +1,1459 @@
+﻿
+@{
+    ViewData["Title"] = "PhonologyAssistantFileMenu";
+}
+
+<h2>PhonologyAssistant FileMenu</h2>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Phonology Assistant</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">File<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">New Project...</a></li>
+                        <li><a href="#">Open Project...</a></li>
+                        <li><a href="#">Close Project...</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Project Settings...</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header bg-info">Backup and Restore:</li>
+                        <li><a href="#">Backup...</a></li>
+                        <li><a href="#">Restore...</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header bg-info">Export to:</li>
+                        <li><a href="#">HTML...</a></li>
+                        <li><a href="#">Word XML...</a></li>
+                        <li><a href="#">Rich Text Format(RTF)...</a></li>
+                        <li><a href="#">XLingPaper...</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header bg-info">Audio:</li>
+                        <li><a href="#" class="icon"><span class="glyphicon glyphicon-play"></span> Playback</a></li>
+                        <li><a href="#" class="icon"><span class="glyphicon glyphicon-repeat"></span> Playback Repeatedly</a></li>
+                        <li><a href="#" class="icon"><span class="glyphicon glyphicon-stop"></span> Stop Playback</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header bg-info">Projects:</li>
+                        <li><a href="#">Sekpele 1</a></li>
+                        <li><a href="#">Sekpele 2</a></li>
+                        <li><a href="#">Sekpele 3</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Exit</a></li>
+                    </ul>
+                </li> <!-- file menu -->
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="icon"><span class="glyphicon glyphicon-question-sign"></span> Phonology Assistant Help...F1</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header bg-info"><span class="glyphicon glyphicon-book"></span>  Training:</li>
+                        <li><a href="#" class="icon"> Student Manual...</a></li>
+                        <li><a href="#" class="icon"> Instructor Guide...</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#" class="icon"> About Phonology Assistant...</a></li>
+                    </ul>
+                </li> <!-- tools menu -->
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!-- =========================================================== Descriptive Features POP UP MODAL-DIALOG ================== -->
+<div class="container">
+    <h2>First Launch</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalFirstLaunch">File Menu</button>
+
+    <hr />
+    <div class="modal fade" id="myModalFirstLaunch" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">Phonology Assitant</h4>
+                </div>
+                <div class="modal-body">
+
+                    <nav class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Phonology Assistant</a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">File<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">New Project...</a></li>
+                                            <li><a href="#">Open Project...</a></li>
+                                            <li><a href="#">Close Project...</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Project Settings...</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="dropdown-header bg-info">Backup and Restore:</li>
+                                            <li><a href="#">Backup...</a></li>
+                                            <li><a href="#">Restore...</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="dropdown-header bg-info">Export to:</li>
+                                            <li><a href="#">HTML...</a></li>
+                                            <li><a href="#">Word XML...</a></li>
+                                            <li><a href="#">Rich Text Format(RTF)...</a></li>
+                                            <li><a href="#">XLingPaper...</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="dropdown-header bg-info">Audio:</li>
+                                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-play"></span> Playback</a></li>
+                                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-repeat"></span> Playback Repeatedly</a></li>
+                                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-stop"></span> Stop Playback</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="dropdown-header bg-info">Projects:</li>
+                                            <li><a href="#">Sekpele 2</a></li>
+                                            <li><a href="#">Sekpele 3</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Exit</a></li>
+                                        </ul>
+                                    </li> <!-- file menu -->
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-question-sign"></span> Phonology Assistant Help...F1</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="dropdown-header bg-info"><span class="glyphicon glyphicon-book"></span>  Training:</li>
+                                            <li><a href="#" class="icon"> Student Manual...</a></li>
+                                            <li><a href="#" class="icon"> Instructor Guide...</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#" class="icon"> About Phonology Assistant...</a></li>
+                                        </ul>
+                                    </li> <!-- tools menu -->
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Exit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->
+<!-- =========================================================== New Project POP UP MODAL-DIALOG ================== -->
+<div class="container">
+    <h2>New Project Dialog</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalNewProject">New Project...</button>
+
+    <hr />
+    <div class="modal fade" id="myModalNewProject" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">New Project Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"></div>
+                        <div class="panel-body">
+                            <div class="input-group" style="padding-bottom: 1em;">
+                                <span class="input-group-addon" id="sizing-addon2">Project Name</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                                <span class="input-group-addon" id="sizing-addon2">Speaker</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <span class="input-group-addon" id="sizing-addon2">Language Name</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Language Code</span>
+                                        <input type="text" class="form-control col-xs-3" placeholder="3 letter language code">
+                                    </div>
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <button type="button" class="btn btn-link"><a target="_blank" href="http://www.ethnologue.com/browse/names/">Ethnologue</a></button>
+                                    </div>
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <span class="input-group-addon" id="sizing-addon2">Reasearcher</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon4">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label for="comment">Comments:</label>
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 1em;">
+                                <div class="col-md-7">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Transcriber</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Distinctive Feature Set</span>
+                                        <input type="text" class="form-control" placeholder="(default)" aria-describedby="sizing-addon2" disabled>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sources</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Load</th>
+                                                <th>Source</th>
+                                                <th>Type</th>
+                                                <th>Phonetic Source</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <!-- Add -->
+                                            <!-- minimal setup -->
+                                            <label for="exampleInput" class="btn btn-default">
+                                                Add Source
+                                            </label>
+                                            <input type="file" id="exampleInput" style="display: none" />
+                                            <!-- Add -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn btn-default" disabled>Remove</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn" disabled>Properties...</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Help</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->
+<!-- =========================================================== New Project Sekpele POP UP MODAL-DIALOG ================== -->
+<div class="container">
+    <h2>New Project Dialog Sekpele</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalNewSekpeleProjectSettings">New Project Sekpele...</button>
+
+    <hr />
+    <div class="modal fade" id="myModalNewSekpeleProjectSettings" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">New Project Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"></div>
+                        <div class="panel-body">
+                            <div class="input-group" style="padding-bottom: 1em;">
+                                <span class="input-group-addon" id="sizing-addon2">Project Name</span>
+                                <input type="text" class="form-control" placeholder="Sekpele1" aria-describedby="sizing-addon2">
+                                <span class="input-group-addon" id="sizing-addon2">Speaker</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <span class="input-group-addon" id="sizing-addon2">Language Name</span>
+                                        <input type="text" class="form-control" placeholder="Sekpele" aria-describedby="sizing-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Language Code</span>
+                                        <input type="text" class="form-control col-xs-3" placeholder="">
+                                    </div>
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <button type="button" class="btn btn-link"><a target="_blank" href="http://www.ethnologue.com/browse/names/">Ethnologue</a></button>
+                                    </div>
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <span class="input-group-addon" id="sizing-addon2">Reasearcher</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon4">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label for="comment">Comments:</label>
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 1em;">
+                                <div class="col-md-7">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Transcriber</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Distinctive Feature Set</span>
+                                        <input type="text" class="form-control" placeholder="(default)" aria-describedby="sizing-addon2" disabled>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sources</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Load</th>
+                                                <th>Source</th>
+                                                <th>Type</th>
+                                                <th>Phonetic Source</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" checked="checked"></td>
+                                                <td>C:\Users\JoePhoetician\Documents...\Sekpele1.db</td>
+                                                <td>Toolbox</td>
+                                                <td>\ph</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <!-- Add -->
+                                            <!-- minimal setup -->
+                                            <label for="exampleInput" class="btn btn-default">
+                                                Add Source
+                                            </label>
+                                            <input type="file" id="exampleInput" style="display: none" />
+                                            <!-- Add -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn btn-default">Remove</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn" disabled>Properties...</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Help</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->
+<!-- =========================================================== Project Settings POP UP MODAL-DIALOG ================== -->
+<div class="container">
+    <h2>Project Settings Dialog</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalProjectSettings">Project Settings...</button>
+
+    <hr />
+    <div class="modal fade" id="myModalProjectSettings" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">New Project Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"></div>
+                        <div class="panel-body">
+                            <div class="input-group" style="padding-bottom: 1em;">
+                                <span class="input-group-addon" id="sizing-addon2">Project Name</span>
+                                <input type="text" class="form-control" placeholder="TurkishDelightPhonetic" aria-describedby="sizing-addon2">
+                                <span class="input-group-addon" id="sizing-addon2">Speaker</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <span class="input-group-addon" id="sizing-addon2">Language Name</span>
+                                        <input type="text" class="form-control" placeholder="Turkish" aria-describedby="sizing-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Language Code</span>
+                                        <input type="text" class="form-control col-xs-3" placeholder="tur">
+                                    </div>
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <button type="button" class="btn btn-link"><a target="_blank" href="http://www.ethnologue.com/browse/names/">Ethnologue</a></button>
+                                    </div>
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <span class="input-group-addon" id="sizing-addon2">Reasearcher</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon4">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label for="comment">Comments:</label>
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 1em;">
+                                <div class="col-md-7">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Transcriber</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Distinctive Feature Set</span>
+                                        <input type="text" class="form-control" placeholder="(default)" aria-describedby="sizing-addon2" disabled>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sources</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Load</th>
+                                                <th>Source</th>
+                                                <th>Type</th>
+                                                <th>Phonetic Source</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>C:\Users\JoePhoetician\Documents...\Sekpele3.db</td>
+                                                <td>Toolbox</td>
+                                                <td>\ph</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" checked="checked"></td>
+                                                <td>TurkishDelightsPronuncia-shuns</td>
+                                                <td>FW7</td>
+                                                <td>PronunciationField</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="row">
+                                        <!-- Add -->
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn btn-default">Add</button>
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <div class="container">
+                                                        <!-- minimal setup -->
+                                                        <label for="exampleInput" class="btn btn-link">
+                                                            Non FieldWorks Data Source...
+                                                        </label>
+                                                        <input type="file" id="exampleInput" style="display: none" />
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="container">
+                                                        <!-- minimal setup -->
+                                                        <label for="exampleInput2" class="btn btn-link" disabled>
+                                                            FieldWorks Data 7.0 or later...
+                                                        </label>
+                                                        <input type="file" id="exampleInput2" style="display: none" />
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="container">
+                                                        <!-- minimal setup -->
+                                                        <label for="exampleInput3" class="btn btn-link" disabled>
+                                                            FieldWorks Data 6.0.6 or older...
+                                                        </label>
+                                                        <input type="file" id="exampleInput3" style="display: none" />
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div><!-- Add -->
+                                    </div>
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn btn-default">Remove</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn" disabled>Properties...</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Help</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->
+<!-- =========================================================== DATA CORPUS TAB ================== -->
+
+<div class="container">
+    <hr />
+    <h3>Data Corpus</h3>
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Phonetic</th>
+                <th>Gloss</th>
+                <th>Part of Speech</th>
+                <th>CV Pattern</th>
+                <th>Reference</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ŋkə</td>
+                <td>waist</td>
+                <td>N</td>
+                <td> </td>
+                <td>0036</td>
+            </tr>
+            <tr>
+                <td>fiŋkə</td>
+                <td>hiccougp (n)</td>
+                <td>D</td>
+                <td>CV</td>
+                <td>0114</td>
+            </tr>
+            <tr>
+                <td>tiŋɡə</td>
+                <td>shiver, tremble</td>
+                <td>V</td>
+                <td>CV</td>
+                <td>0122</td>
+            </tr>
+            <tr>
+                <td>ditiŋɡə</td>
+                <td>buttock</td>
+                <td>N</td>
+                <td>VCCV</td>
+                <td>0044</td>
+            </tr>
+            <tr>
+                <td>mʌŋlə</td>
+                <td>step (v)</td>
+                <td>V</td>
+                <td>CCV</td>
+                <td>0155</td>
+            </tr>
+            <tr>
+                <td>buteko</td>
+                <td>stumble</td>
+                <td>V</td>
+                <td>CVCVCV</td>
+                <td>0156</td>
+            </tr>
+            <tr>
+                <td>mɪnɪ</td>
+                <td>swallow</td>
+                <td>V</td>
+                <td>CVCV</td>
+                <td>0145</td>
+            </tr>
+            <tr>
+                <td>kɛj̃ɛ̃ʔ flɔʔ</td>
+                <td>lip</td>
+                <td>N</td>
+                <td>CVCVC CCVC</td>
+                <td>0016</td>
+            </tr>
+            <tr>
+                <td>fjɔ̃</td>
+                <td>suck</td>
+                <td>V</td>
+                <td>CCV</td>
+                <td>0148</td>
+            </tr>
+            <tr>
+                <td>ɗi</td>
+                <td>eat</td>
+                <td>V</td>
+                <td>CCV</td>
+                <td>0140</td>
+            </tr>
+            <tr>
+                <td>tʃetʃi</td>
+                <td>run</td>
+                <td>V</td>
+                <td>CCVCCV</td>
+                <td>0159</td>
+            </tr>
+            <tr>
+                <td> tʃɛkɛlɛ </td>
+                <td>limp</td>
+                <td>V</td>
+                <td>CCVCVCV</td>
+                <td>0157</td>
+            </tr>
+            <tr>
+                <td>tʃoko(t/d)o</td>
+                <td>listen</td>
+                <td>V</td>
+                <td>CCVCVCV</td>
+                <td>0135</td>
+            </tr>
+            <tr>
+                <td> tidi </td>
+                <td>touch, feel (active)</td>
+                <td>V</td>
+                <td>CVCV</td>
+                <td>0138</td>
+            </tr>
+            <tr>
+                <td>dinambɛʔ</td>
+                <td>pupil (of eye)</td>
+                <td>N</td>
+                <td>CVCVCCVC</td>
+                <td>0010</td>
+            </tr>
+        </tbody>
+    </table>
+</div>  <!-- container -->
+<!-- =========================================================== CONSONANT CHART TAB ================== -->
+
+<div class="container">
+    <hr />
+    <h3>Consonant Chart</h3>
+    <div class="panel panel-default">
+        <div class="panel-heading">Consonant Chart</div>
+        <div class="panel-body">
+            <table class="table table-hover table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>bilabial</th>
+                        <th>labiodental</th>
+                        <th>dental</th>
+                        <th>alveolar</th>
+                        <th>postalveolar</th>
+                        <th>palatal</th>
+                        <th>velar</th>
+                        <th>glottal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>implosive</td>
+                        <td> </td>
+                        <td> </td>
+                        <td>  </td>
+                        <td>ɗ </td>
+                        <td>  </td>
+                        <td>  </td>
+                        <td>  </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td>plosive</td>
+                        <td>p b</td>
+                        <td> </td>
+                        <td>d̪ </td>
+                        <td>t d </td>
+                        <td>  </td>
+                        <td>  </td>
+                        <td>k  ɡ</td>
+                        <td>ʔ </td>
+                    </tr>
+                    <tr>
+                        <td>nasal</td>
+                        <td>m</td>
+                        <td>ɱ </td>
+                        <td> </td>
+                        <td>n </td>
+                        <td> </td>
+                        <td>ɲ </td>
+                        <td>ŋ </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td>fricative</td>
+                        <td> </td>
+                        <td>f</td>
+                        <td>  </td>
+                        <td>s </td>
+                        <td>ʃ </td>
+                        <td>  </td>
+                        <td>  </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td>approximant</td>
+                        <td></td>
+                        <td></td>
+                        <td> </td>
+                        <td>l </td>
+                        <td> </td>
+                        <td>j̃ </td>
+                        <td>w̃ </td>
+                        <td> </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Number of Times Phone Occurs</div>
+        <div class="panel-body">
+            <table class="table table-hover table-striped table-bordered">
+                <thead>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> </td>
+                        <td>ɗ </td>
+                        <td>p </td>
+                        <td>b </td>
+                        <td>d̪ </td>
+                        <td>t  </td>
+                        <td>d </td>
+                        <td>k  </td>
+                        <td>ɡ</td>
+                        <td>ʔ </td>
+                        <td>m</td>
+                        <td>ɱ </td>
+                        <td>n </td>
+                        <td>ɲ </td>
+                        <td>ŋ </td>
+                        <td>f</td>
+                        <td>s </td>
+                        <td>ʃ </td>
+                        <td>l </td>
+                        <td>j̃ </td>
+                        <td>w̃ </td>
+                    </tr>
+                    <tr>
+                        <td>normally </td>
+                        <td>1 </td>
+                        <td>10 </td>
+                        <td>23 </td>
+                        <td>1 </td>
+                        <td>22  </td>
+                        <td>80 </td>
+                        <td>3  </td>
+                        <td>3</td>
+                        <td>66 </td>
+                        <td>32</td>
+                        <td>2 </td>
+                        <td>35 </td>
+                        <td>3 </td>
+                        <td>7 </td>
+                        <td>11</td>
+                        <td>47 </td>
+                        <td>9 </td>
+                        <td>18 </td>
+                        <td>11 </td>
+                        <td>6 </td>
+                    </tr>
+                    <tr>
+                        <td>as primary uncertainty </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>21  </td>
+                        <td>0 </td>
+                        <td>0  </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                    </tr>
+                    <tr>
+                        <td>as non primary uncertainty </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0  </td>
+                        <td>21 </td>
+                        <td>0  </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</div>  <!-- container -->
+<!-- =========================================================== VOWEL CHART TAB ================== -->
+
+<div class="container">
+    <hr />
+    <h3>Vowel Chart</h3>
+    <div class="panel panel-default">
+        <div class="panel-heading">Vowel Chart</div>
+        <div class="panel-body">
+            <table class="table table-hover table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>front</th>
+                        <th>central</th>
+                        <th>back</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5">close</td>
+                        <td> i</td>
+                        <td> ɨ</td>
+                        <td> u </td>
+                    </tr>
+                    <tr>
+                        <td> ĩ</td>
+                        <td> </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td> i̯ </td>
+                        <td> </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td> ĭ </td>
+                        <td> </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td> ï </td>
+                        <td> </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">near-close</td>
+                        <td> ɪ </td>
+                        <td> </td>
+                        <td> ʊ </td>
+                    </tr>
+                    <tr>
+                        <td> ɪ̃ </td>
+                        <td> </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">close-mid</td>
+                        <td>  e </td>
+                        <td> </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td>  ĩ </td>
+                        <td> </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1">mid</td>
+                        <td>   </td>
+                        <td> ə </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">open-mid</td>
+                        <td>  ɛ </td>
+                        <td> </td>
+                        <td>  ʌ ɔ </td>
+                    </tr>
+                    <tr>
+                        <td>  ɛ̃ </td>
+                        <td> </td>
+                        <td> ɔ̃ </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">open</td>
+                        <td> a  </td>
+                        <td>  </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td>  ã </td>
+                        <td> </td>
+                        <td>  </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Number of Times Phone Occurs</div>
+        <div class="panel-body">
+            <table class="table table-hover table-striped table-bordered">
+                <thead>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> </td>
+                        <td> i</td>
+                        <td> ɨ</td>
+                        <td> u </td>
+                        <td> ĩ</td>
+                        <td> i̯ </td>
+                        <td> ĭ </td>
+                        <td> ï </td>
+                        <td> ɪ </td>
+                        <td> ʊ </td>
+                        <td> ɪ̃ </td>
+                        <td>  e </td>
+                        <td>  ĩ </td>
+                        <td> ə </td>
+                        <td>  ɛ </td>
+                        <td> ʌ </td>
+                        <td>   ɔ </td>
+                        <td>  ɛ̃ </td>
+                        <td> ɔ̃ </td>
+                        <td> a  </td>
+                        <td>  ã </td>
+                    <tr>
+                        <td>normally </td>
+                        <td>1 </td>
+                        <td>10 </td>
+                        <td>23 </td>
+                        <td>1 </td>
+                        <td>22  </td>
+                        <td>80 </td>
+                        <td>3  </td>
+                        <td>3</td>
+                        <td>66 </td>
+                        <td>32</td>
+                        <td>2 </td>
+                        <td>35 </td>
+                        <td>3 </td>
+                        <td>7 </td>
+                        <td>11</td>
+                        <td>47 </td>
+                        <td>9 </td>
+                        <td>18 </td>
+                        <td>11 </td>
+                        <td>6 </td>
+                    </tr>
+                    <tr>
+                        <td>as primary uncertainty </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0  </td>
+                        <td>0 </td>
+                        <td>0  </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                    </tr>
+                    <tr>
+                        <td>as non primary uncertainty </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0  </td>
+                        <td>0 </td>
+                        <td>0  </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0</td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                        <td>0 </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</div>  <!-- container -->
+<!-- =========================================================== BROWSE FOR FILES BUTTONS ================== -->
+<div class="alert alert-info">
+    <input id="myInput" type="file" style="visibility:hidden" />
+    <input type="button" value="Browse..." onclick="$('#myInput').click();" />
+</div>
+
+<div class="container">
+    <!-- minimal setup -->
+    <label for="exampleInput" class="btn btn-default">
+        Click me
+    </label>
+    <input type="file" id="exampleInput" style="display: none" />
+</div>
+
+
+<br />
+<br />
+<hr />
+
+<hr />
+<hr />
+<!-- ====================================================================================================================== -->
+<!-- ====================================================================================================================== -->
+<!-- =====================================      FUTURE                       =============================================== -->
+<!-- ====================================================================================================================== -->
+<!-- ====================================================================================================================== -->
+<!-- ====================================================================================================================== -->
+<!-- =========================================================== New Project (Future) POP UP MODAL-DIALOG ================== -->
+<div class="container">
+    <h2>New Project Dialog (Future)</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalNewProject2">New Project (Future)...</button>
+
+    <hr />
+    <div class="modal fade" id="myModalNewProject2" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">New Project Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"></div>
+                        <div class="panel-body">
+                            <div class="input-group" style="padding-bottom: 1em;">
+                                <span class="input-group-addon" id="sizing-addon2">Project Name</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                                <span class="input-group-addon" id="sizing-addon2">Speaker</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <span class="input-group-addon" id="sizing-addon2">Language Name</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Language Code</span>
+                                        <input type="text" class="form-control col-xs-3" placeholder="3 letter language code">
+                                    </div>
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <button type="button" class="btn btn-link"><a target="_blank" href="http://www.ethnologue.com/browse/names/">Ethnologue</a></button>
+                                    </div>
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <span class="input-group-addon" id="sizing-addon2">Reasearcher</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon4">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label for="comment">Comments:</label>
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 1em;">
+                                <div class="col-md-7">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Transcriber</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Distinctive Feature Set</span>
+                                        <input type="text" class="form-control" placeholder="(default)" aria-describedby="sizing-addon2" disabled>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sources</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Load</th>
+                                                <th>Source</th>
+                                                <th>Type</th>
+                                                <th>Phonetic Source</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="row">
+                                        <!-- Add -->
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn btn-default">Add</button>
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <div class="container">
+                                                        <!-- minimal setup -->
+                                                        <label for="exampleInput" class="btn btn-link">
+                                                            Non FieldWorks Data Source...
+                                                        </label>
+                                                        <input type="file" id="exampleInput" style="display: none" />
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="container">
+                                                        <!-- minimal setup -->
+                                                        <label for="exampleInput2" class="btn btn-link" disabled>
+                                                            FieldWorks Data 7.0 or later...
+                                                        </label>
+                                                        <input type="file" id="exampleInput2" style="display: none" />
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="container">
+                                                        <!-- minimal setup -->
+                                                        <label for="exampleInput3" class="btn btn-link" disabled>
+                                                            FieldWorks Data 6.0.6 or older...
+                                                        </label>
+                                                        <input type="file" id="exampleInput3" style="display: none" />
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div><!-- Add -->
+                                    </div>
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn btn-default">Remove</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn" disabled>Properties...</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Help</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->
+<!-- =========================================================== New Project Sekpele (future ) POP UP MODAL-DIALOG ================== -->
+<div class="container">
+    <h2>New Project Dialog Sekpele (future)</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalNewSekpeleProjectSettingsFuture">New Project Sekpele (future)...</button>
+
+    <hr />
+    <div class="modal fade" id="myModalNewSekpeleProjectSettingsFuture" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">New Project Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"></div>
+                        <div class="panel-body">
+                            <div class="input-group" style="padding-bottom: 1em;">
+                                <span class="input-group-addon" id="sizing-addon2">Project Name</span>
+                                <input type="text" class="form-control" placeholder="Sekpele1" aria-describedby="sizing-addon2">
+                                <span class="input-group-addon" id="sizing-addon2">Speaker</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <span class="input-group-addon" id="sizing-addon2">Language Name</span>
+                                        <input type="text" class="form-control" placeholder="Sekpele" aria-describedby="sizing-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Language Code</span>
+                                        <input type="text" class="form-control col-xs-3" placeholder="">
+                                    </div>
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <button type="button" class="btn btn-link"><a target="_blank" href="http://www.ethnologue.com/browse/names/">Ethnologue</a></button>
+                                    </div>
+                                    <div class="input-group" style="padding-bottom: 1em;">
+                                        <span class="input-group-addon" id="sizing-addon2">Reasearcher</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon4">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label for="comment">Comments:</label>
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 1em;">
+                                <div class="col-md-7">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Transcriber</span>
+                                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Distinctive Feature Set</span>
+                                        <input type="text" class="form-control" placeholder="(default)" aria-describedby="sizing-addon2" disabled>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sources</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Load</th>
+                                                <th>Source</th>
+                                                <th>Type</th>
+                                                <th>Phonetic Source</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" checked="checked"></td>
+                                                <td>C:\Users\JoePhoetician\Documents...\Sekpele1.db</td>
+                                                <td>Toolbox</td>
+                                                <td>\ph</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="row">
+                                        <!-- Add -->
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn btn-default">Add</button>
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <div class="container">
+                                                        <!-- minimal setup -->
+                                                        <label for="exampleInput" class="btn btn-link">
+                                                            Non FieldWorks Data Source...
+                                                        </label>
+                                                        <input type="file" id="exampleInput" style="display: none" />
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="container">
+                                                        <!-- minimal setup -->
+                                                        <label for="exampleInput2" class="btn btn-link" disabled>
+                                                            FieldWorks Data 7.0 or later...
+                                                        </label>
+                                                        <input type="file" id="exampleInput2" style="display: none" />
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="container">
+                                                        <!-- minimal setup -->
+                                                        <label for="exampleInput3" class="btn btn-link" disabled>
+                                                            FieldWorks Data 6.0.6 or older...
+                                                        </label>
+                                                        <input type="file" id="exampleInput3" style="display: none" />
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div><!-- Add -->
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn btn-default">Remove</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="btn-group" style="padding-bottom: 1em;">
+                                            <button type="button" class="btn" disabled>Properties...</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Help</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->

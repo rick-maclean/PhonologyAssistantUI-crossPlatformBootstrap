@@ -1,0 +1,11 @@
+c:\users\maclean\source\repos\PhonologyAssistantUI-crossPlatform\PhonologyAssistantUI-crossPlatform\bin\Debug\netcoreapp1.1\PhonologyAssistantUI-crossPlatform.deps.json
+c:\users\maclean\source\repos\PhonologyAssistantUI-crossPlatform\PhonologyAssistantUI-crossPlatform\bin\Debug\netcoreapp1.1\PhonologyAssistantUI-crossPlatform.runtimeconfig.json
+c:\users\maclean\source\repos\PhonologyAssistantUI-crossPlatform\PhonologyAssistantUI-crossPlatform\bin\Debug\netcoreapp1.1\PhonologyAssistantUI-crossPlatform.runtimeconfig.dev.json
+c:\users\maclean\source\repos\PhonologyAssistantUI-crossPlatform\PhonologyAssistantUI-crossPlatform\bin\Debug\netcoreapp1.1\PhonologyAssistantUI-crossPlatform.dll
+c:\users\maclean\source\repos\PhonologyAssistantUI-crossPlatform\PhonologyAssistantUI-crossPlatform\bin\Debug\netcoreapp1.1\PhonologyAssistantUI-crossPlatform.pdb
+c:\users\maclean\source\repos\PhonologyAssistantUI-crossPlatform\PhonologyAssistantUI-crossPlatform\obj\Debug\netcoreapp1.1\PhonologyAssistantUI-crossPlatform.csproj.CoreCompileInputs.cache
+c:\users\maclean\source\repos\PhonologyAssistantUI-crossPlatform\PhonologyAssistantUI-crossPlatform\obj\Debug\netcoreapp1.1\PhonologyAssistantUI-crossPlatform.AssemblyInfoInputs.cache
+c:\users\maclean\source\repos\PhonologyAssistantUI-crossPlatform\PhonologyAssistantUI-crossPlatform\obj\Debug\netcoreapp1.1\PhonologyAssistantUI-crossPlatform.AssemblyInfo.cs
+c:\users\maclean\source\repos\PhonologyAssistantUI-crossPlatform\PhonologyAssistantUI-crossPlatform\obj\Debug\netcoreapp1.1\PhonologyAssistantUI-crossPlatform.dll
+c:\users\maclean\source\repos\PhonologyAssistantUI-crossPlatform\PhonologyAssistantUI-crossPlatform\obj\Debug\netcoreapp1.1\PhonologyAssistantUI-crossPlatform.pdb
+c:\users\maclean\source\repos\PhonologyAssistantUI-crossPlatform\PhonologyAssistantUI-crossPlatform\obj\Debug\netcoreapp1.1\PhonologyAssistantUI-crossPlatform.csprojResolveAssemblyReference.cache

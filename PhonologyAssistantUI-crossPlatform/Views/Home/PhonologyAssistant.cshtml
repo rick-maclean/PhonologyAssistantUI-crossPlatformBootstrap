@@ -1,0 +1,2394 @@
+﻿
+@{
+    ViewData["Title"] = "PhonologyAssistant";
+}
+
+<h2>PhonologyAssistant</h2>
+
+
+<div class="container">
+    <hr />
+</div> <!-- container -->
+
+
+
+<div class="container">
+    <label for="inputlg">Search String</label>
+    <div class="row">
+        <div class="col-sm-2"><button type="button" class="btn btn-success">Search</button></div>
+        <div class="col-sm-pull-10">
+            <input class="form-control input-lg" id="inputlg" type="text" placeholder="◊/◊_◊">
+        </div>
+    </div>
+    <h3>Filter Tool</h3>
+    <!-- Alignment -->
+    <div class="bs-example" data-example-id="split-button-dropdown">
+        <!-- Split button -->
+        <div class="btn-group">
+
+            <!-- Consonants -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-success">Consonants</button>
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">ɗ</a></li>
+                    <li><a href="#">kp</a></li>
+                    <li><a href="#">ŋ</a></li>
+                    <li><a href="#">d̪</a></li>
+                    <li><a href="#">ʔ</a></li>
+                    <li><a href="#">tʃ</a></li>
+                    <li><a href="#">w̃</a></li>
+                    <li><a href="#">j̃</a></li>
+                    <li><a href="#">j</a></li>
+                    <li><a href="#">ɡb</a></li>
+                </ul>
+            </div><!-- Consonants -->
+            <!-- Vowels -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-success">Vowels</button>
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">ĩ</a></li>
+                    <li><a href="#">i̯</a></li>
+                    <li><a href="#">ĭ</a></li>
+                    <li><a href="#">i</a></li>
+                    <li><a href="#">ï</a></li>
+                    <li><a href="#">ɪ̃</a></li>
+                    <li><a href="#">ɪ</a></li>
+                    <li><a href="#">ë</a></li>
+                    <li><a href="#">ɛ̃</a></li>
+                    <li><a href="#">ɛ</a></li>
+                    <li><a href="#">ɔ</a></li>
+                    <li><a href="#">ə</a></li>
+                    <li><a href="#">ɔ̃</a></li>
+                </ul>
+            </div><!-- Vowels -->
+            <!-- Other -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-info">Other</button>
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header bg-info">Diacritic</li>
+                    <li><a href="#">_͇</a></li>
+                    <li><a href="#">ᶮ</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header bg-info">Stress</li>
+                    <li><a href="#">ʹ</a></li>
+                    <li><a href="#">'</a></li>
+                    <li><a href="#">ˌ</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header bg-info">Length</li>
+                    <li><a href="#">ː</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header bg-info">Boundary</li>
+                    <li><a href="#">‖</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header bg-info">Tone</li>
+                    <li><a href="#">↘</a></li>
+                    <li><a href="#">↗</a></li>
+                    <li><a href="#">˩˦˨</a></li>
+                    <li><a href="#">˨˩˥</a></li>
+                    <li><a href="#">˨˩˨</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header bg-info">Pitch-Phonation</li>
+                    <li><a href="#">ʱ</a></li>
+                    <li><a href="#">ˀ</a></li>
+                    <li><a href="#">ʰ</a></li>
+                </ul>
+            </div><!-- Other -->
+            <!-- Classes -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Classes</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">ExPhoneClass_Alv_tdnrth</a></li>
+                    <li><a href="#">ExArtFtrsClass_VclssPlosives</a></li>
+                    <li><a href="#">ExArtFtrsClass_BilabORLabDent</a></li>
+                    <li><a href="#">ExBinFtrsClass+high+syll</a></li>
+                    <li><a href="#">ExBinFtrsClass+antOR+LAB</a></li>
+                </ul>
+            </div><!-- Classes -->
+            <!-- Descriptive Features -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Descriptive Features</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">breathy voiced</a></li>
+                    <li><a href="#">back</a></li>
+                    <li><a href="#">centralized</a></li>
+                    <li><a href="#">downstep</a></li>
+                    <li><a href="#">flap</a></li>
+                    <li><a href="#">fricative</a></li>
+                    <li><a href="#">global fall</a></li>
+                    <li><a href="#">glottal</a></li>
+                    <li><a href="#">implosive</a></li>
+                    <li><a href="#">lateral release</a></li>
+                    <li><a href="#">linguolabial</a></li>
+                    <li><a href="#">lip-compressed</a></li>
+                    <li><a href="#">labial-velar</a></li>
+                </ul>
+            </div><!-- Descriptive Features -->
+            <!-- Destinctive Features -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Destinctive Features</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;ant</a></li>
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;approx</a></li>
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;ATR</a></li>
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;back</a></li>
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;cons</a></li>
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;const</a></li>
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;coronal</a></li>
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;implosive</a></li>
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;trill</a></li>
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;tense</a></li>
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;voice</a></li>
+                    <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;radical</a></li>
+                </ul>
+            </div><!-- Destinctive Features -->
+        </div>
+    </div>
+</div>  <!-- container -->
+
+<div class="container">
+    <hr />
+    <h3>Search Results</h3>
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>CV Pattern</th>
+                <th>Phonetic</th>
+                <th>Part of Speech</th>
+                <th>Gloss</th>
+                <th>Reference</th>
+                <th>Plural Form</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> </td>
+                <td>ŋkə</td>
+                <td>N</td>
+                <td>waist</td>
+                <td>0036</td>
+                <td>ŋkɛ</td>
+            </tr>
+            <tr>
+                <td>CV</td>
+                <td>fiŋkə</td>
+                <td>Doe</td>
+                <td>hiccougp (n)</td>
+                <td>0114</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CV</td>
+                <td>tiŋɡə</td>
+                <td>V</td>
+                <td>shiver, tremble</td>
+                <td>0122</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>VCCV</td>
+                <td>ditiŋɡə</td>
+                <td>N</td>
+                <td>buttock</td>
+                <td>0044</td>
+                <td>etiŋɡɛ</td>
+            </tr>
+            <tr>
+                <td>CCV</td>
+                <td>mʌŋlə</td>
+                <td>V</td>
+                <td>step (v)</td>
+                <td>0155</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>  <!-- container -->
+
+<div class="container">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Phonology Assistant</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">File<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">New Project...</a></li>
+                            <li><a href="#">Open Project...</a></li>
+                            <li><a href="#">Close Project...</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Project Settings...</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header bg-info">Backup and Restore:</li>
+                            <li><a href="#">Backup...</a></li>
+                            <li><a href="#">Restore...</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header bg-info">Export to:</li>
+                            <li><a href="#">HTML...</a></li>
+                            <li><a href="#">Word XML...</a></li>
+                            <li><a href="#">Rich Text Format(RTF)...</a></li>
+                            <li><a href="#">XLingPaper...</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header bg-info">Audio:</li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-play"></span> Playback</a></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-repeat"></span> Playback Repeatedly</a></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-stop"></span> Stop Playback</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header bg-info">Projects:</li>
+                            <li><a href="#">Sekpele 1</a></li>
+                            <li><a href="#">Sekpele 2</a></li>
+                            <li><a href="#">Sekpele 3</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Exit</a></li>
+                        </ul>
+                    </li> <!-- file menu -->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Find</a></li>
+                            <li><a href="#">Find Next</a></li>
+                            <li><a href="#">Find Previous</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Edit Source Record</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Reload Project Data Sources</a></li>
+                        </ul>
+                    </li> <!-- edit menu -->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-hdd"></span> Data Corpus</a></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-euro"></span> Consonant Chart</a></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-chevron-down"></span> Vowel Chart</a></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-calendar"></span> Distribution Charts</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-yen"></span> Minimal Pairs</a></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-retweet"></span> Similar Environments</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header bg-info">Grouping:</li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-tasks"></span> Group By Primary Sort Field</a></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-minus"></span> Collaspe All Groups</a></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-plus"></span> Expand All Groups</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-th-list"></span> Record View</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-signal"></span> Histogram</a></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-grain"></span> Toggle HTML View</a></li>
+                            <li role="separator" class="divider"></li>
+                        </ul>
+                    </li> <!-- view menu -->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-filter"></span> Filters...</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"> Transcription Changes...</a></li>
+                            <li><a href="#"> Ambiguous Sequences...</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"> Descriptive Features...</a></li>
+                            <li><a href="#"> Distinctive Features...</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"> Classes...</a></li>
+                            <li><a href="#"> Undefined Phonetic Characters...</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-ok-circle"></span> Options...</a></li>
+                        </ul>
+                    </li> <!-- tools menu -->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="icon"><span class="glyphicon glyphicon-question-sign"></span> Phonology Assistant Help...F1</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header bg-info"><span class="glyphicon glyphicon-book"></span>  Training:</li>
+                            <li><a href="#" class="icon"> Student Manual...</a></li>
+                            <li><a href="#" class="icon"> Instructor Guide...</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" class="icon"> About Phonology Assistant...</a></li>
+                        </ul>
+                    </li> <!-- tools menu -->
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+</div> <!-- container -->
+<!-- =========================================================== Ambiguous Sequences POP UP MODAL-DIALOG ================== -->
+<div class="container">
+    <h2>Ambiguous Sequences</h2>
+    <input type="checkbox">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> My label
+        </label>
+    </div>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalAmbiguousSequences">Ambiguous Sequences</button>
+
+    <hr />
+    <div class="modal fade" id="myModalAmbiguousSequences" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">Ambiguous Sequences</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Sequence</th>
+                                <th>Treat as one unit?</th>
+                                <th>Base Character</th>
+                                <th>CV Pattern</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>kp </td>
+                                <td><input type="checkbox"></td>
+                                <td>p</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>ɡb</td>
+                                <td><input type="checkbox"></td>
+                                <td>b</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>tʃ</td>
+                                <td><input type="checkbox"></td>
+                                <td>ʃ</td>
+                                <td>C</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->
+<!-- =========================================================== Transcription Changes POP UP MODAL-DIALOG ================== -->
+<div class="container">
+    <h2>Transcription Changes</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalTranscriptionChanges">Transcription Changes</button>
+
+    <hr />
+    <div class="modal fade" id="myModalTranscriptionChanges" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">Transcription Changes</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Transcribed in source as:</th>
+                                <th colspan="4">Replace with one of these options:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>tʃ</td>
+                                <td>C</td>
+                                <td>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio"> None
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio">t
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>C</td>
+                                <td>         </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio"> None
+                                        </label>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td>         </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->
+<!-- ===========================================================  ================== -->
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">Panel heading</div>
+    <div class="panel-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+</div>
+
+<!-- =========================================================== Classes POP UP MODAL-DIALOG ================== -->
+<div class="container">
+    <h2>Classes</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalClassesTool">Classes</button>
+
+    <hr />
+    <div class="modal fade" id="myModalClassesTool" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">Classes</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Members</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ExPhoneClass_Alv_tdnrth</td>
+                                <td>{t,d,n,r,tʰ}</td>
+                                <td>Phones</td>
+                            </tr>
+                            <tr>
+                                <td>ExArtFtrsClass_VclssPlosives  </td>
+                                <td>[[plosive][voiceless]]</td>
+                                <td>Descriptie features</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>ExArtFtrsClass_BilabORLabDent  </td>
+                                <td>{[bilabial],[labiodental]}</td>
+                                <td>Descriptie features</td>
+
+                            </tr>
+                            <tr>
+                                <td>ExBinFtrsClass+high+syll</td>
+                                <td>[[+high][+syll]]</td>
+                                <td>Distinctive feature</td>
+
+                            </tr>
+                            <tr>
+                                <td>ExBinFtrsClass+antOR+LAB</td>
+                                <td>{[+ant],[+labial]}</td>
+                                <td>Distinctive feature</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <!-- Consonants -->
+                    <div class="btn-group pull-left">
+                        <button type="button" class="btn btn-default">Add</button>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Phones Class...</a></li>
+                            <li><a href="#">Descriptive Features Class...</a></li>
+                            <li><a href="#">Disctinctive Features Class...</a></li>
+                        </ul>
+                    </div><!-- Consonants -->
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Modify...</button>
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Copy</button>
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Help</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->
+<!-- =========================================================== Descriptive Features POP UP MODAL-DIALOG ================== -->
+<div class="container">
+    <h2>Descriptive Features</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalDescriptiveFeatures">Descriptive Features</button>
+
+    <hr />
+    <div class="modal fade" id="myModalDescriptiveFeatures" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">Descriptive Features</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-3" style="background-color:lavender;">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Phone List</div>
+                                <div class="panel-body">
+                                    <table class="table table-hover table-striped table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Phone</th>
+                                                <th>Count</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>- </td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>kp</td>
+                                                <td>8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>b</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ɡb</td>
+                                                <td>16</td>
+                                            </tr>
+                                            <tr>
+                                                <td>d̪</td>
+                                                <td>25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>w̃</td>
+                                                <td>7</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ŋ</td>
+                                                <td>34</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ʔ</td>
+                                                <td>21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>f</td>
+                                                <td>32</td>
+                                            </tr>
+                                            <tr>
+                                                <td>j̃</td>
+                                                <td>13</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9" style="background-color:lavender;">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Features</div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> advanced
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox" style="background-color:yellow;">
+                                                    <label>
+                                                        <input type="checkbox" checked="checked"> advance tongue root
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> affricate
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> affricated
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> alveolar
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> alveol0-palatal
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> apical
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> approximant
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> aspirated
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> back
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" checked="checked"> bilabial
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> breathy voiced
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> central
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" checked="checked"> ejective
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> apiglottal
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> extra high tone
+                                                    </label>
+                                                </div>
+                                            </div> <!-- form-group -->
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> flap
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> fricative
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> front
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> global fall
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> global rise
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> glottal
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> glottalized
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> implosive
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> labialized
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> labial-palatal
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> labial-velar
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> labiodental
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> laminal
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> lateral
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> lateral release
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> linguolabial
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> lip-compressed
+                                                    </label>
+                                                </div>
+                                            </div> <!-- form-group -->
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> mid-centralized
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> monophthong
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> more rounded
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> nasal
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox">nasal release
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" checked="checked"> nasalized
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> near-back
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> no audible release
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> non-syllabic
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> open-mid
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> palatal
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> palatalized
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox" style="background-color:yellow;">
+                                                    <label>
+                                                        <input type="checkbox" checked="checked"> pharyngeal
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> plosive
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> postalveolar
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> preaspirated
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> pre-glottalized
+                                                    </label>
+                                                </div>
+                                            </div> <!-- form-group -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- container -->
+
+<div class="container">
+    <h5>12 grid of bootstrap eg col-sm-3 and  col-sm-9</h5>
+
+    <hr>
+    <h3>Descriptive Features</h3>
+    <div class="row">
+        <div class="col-sm-3" style="background-color:lavender;">
+            <div class="panel panel-default">
+                <div class="panel-heading">Phone List</div>
+                <div class="panel-body">
+                    <table class="table table-hover table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Phone</th>
+                                <th>Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>- </td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>kp</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>b</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>ɡb</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>d̪</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>w̃</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>ŋ</td>
+                                <td>34</td>
+                            </tr>
+                            <tr>
+                                <td>ʔ</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>f</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>j̃</td>
+                                <td>13</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-9" style="background-color:lavender;">
+            <div class="panel panel-default">
+                <div class="panel-heading">Features</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> advanced
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> advance tongue root
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> affricate
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> affricated
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> alveolar
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> alveol0-palatal
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> apical
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> approximant
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> aspirated
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> back
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> bilabial
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> breathy voiced
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> central
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> ejective
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> apiglottal
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> extra high tone
+                                    </label>
+                                </div>
+                            </div> <!-- form-group -->
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> flap
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> fricative
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> front
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> global fall
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> global rise
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> glottal
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> glottalized
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> implosive
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> labialized
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> labial-palatal
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> labial-velar
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> labiodental
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> laminal
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> lateral
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> lateral release
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> linguolabial
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> lip-compressed
+                                    </label>
+                                </div>
+                            </div> <!-- form-group -->
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> mid-centralized
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> monophthong
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> more rounded
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> nasal
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">nasal release
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" checked="checked"> nasalized
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> near-back
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> no audible release
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> non-syllabic
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> open-mid
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> palatal
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> palatalized
+                                    </label>
+                                </div>
+                                <div class="checkbox" style="background-color:yellow;">
+                                    <label>
+                                        <input type="checkbox" checked="checked"> pharyngeal
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> plosive
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> postalveolar
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> preaspirated
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> pre-glottalized
+                                    </label>
+                                </div>
+                            </div> <!-- form-group -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  <!-- container -->
+
+<div class="container">
+    <div class="col-lg-6">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default" aria-label="Bold">
+                    <span class="glyphicon glyphicon-bold"></span>
+                </button>
+                <button type="button" class="btn btn-default" aria-label="Italic">
+                    <span class="glyphicon glyphicon-italic"></span>
+                </button>
+            </div>
+            <input class="form-control" aria-label="Text input with multiple buttons">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="input-group input-group-sm">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                    <button type="button" class="btn btn-default active">
+                        N/A
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+
+                </div>
+                <div class="text-left" style="margin-left: 4px;">Somthing</div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="input-group input-group-sm">
+                <div class="input-group-btn">
+                    <label class="btn btn-default">
+                        <input type="radio" name="options" id="On" /><span class="glyphicon glyphicon-plus"></span>
+                    </label>
+                    <label class="btn btn-default active">
+                        <input type="radio" name="options" id="NA" />N/A
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="options" id="Off" /><span class="glyphicon glyphicon-minus"></span>
+                    </label>
+                </div>
+                <div class="text-left" style="margin-left: 4px;">Somthing</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="On" /><span class="glyphicon glyphicon-plus"></span>
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="NA" />N/A
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="Off" /><span class="glyphicon glyphicon-minus"></span>
+        </label>
+        <div class="text-left" style="margin-left: 4px;">Somthing</div>
+    </div>
+
+
+    <i class="icon-stop"></i>
+    <input id="checkbox-parent" type="checkbox" value="state"> parent<br />
+
+    <input id="checkbox2" type="checkbox" value="1">
+    <script>$('#checkbox2').checkbox().chbxChecked(null);</script>
+</div>
+
+<!-- =========================================================== Distinctive Features POP UP MODAL- DIALOG ================== -->
+<div class="container">
+    <h2>Distinctive Features</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalDistinctiveFeatures">Distinctive Features</button>
+
+    <hr />
+    <div class="modal fade" id="myModalDistinctiveFeatures" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">Distinctive Features</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-3" style="background-color:lavender;">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Phone List</div>
+                                <div class="panel-body">
+                                    <table class="table table-hover table-striped table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Phone</th>
+                                                <th>Count</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>- </td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>kp</td>
+                                                <td>8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>b</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ɡb</td>
+                                                <td>16</td>
+                                            </tr>
+                                            <tr>
+                                                <td>m</td>
+                                                <td>17</td>
+                                            </tr>
+                                            <tr style="background-color:lightblue;">
+                                                <td>f</td>
+                                                <td>8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>d̪</td>
+                                                <td>25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>w̃</td>
+                                                <td>7</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ŋ</td>
+                                                <td>34</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ʔ</td>
+                                                <td>21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>f</td>
+                                                <td>32</td>
+                                            </tr>
+                                            <tr>
+                                                <td>j̃</td>
+                                                <td>13</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Features<span class="pull-right">Feature Set: default</span></div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <strong>(no phone description available)</strong>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">ant</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">approx</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">ATR</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">back</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">cons</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm active">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px; background-color:yellow;">constr</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm active">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">cont</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">coronal</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">delayed</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">distr</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">dorsal</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">front</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm active">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">high</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">implosive</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">labial</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">labiodental</div>
+                                                </div>
+                                            </div> <!-- form-group -->
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">lat</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-warning btn-sm active">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">long</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-warning btn-sm active">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">low</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">nas</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">radical</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">rnd</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">son</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">spread</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">strid</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm active">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">syll</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">tap</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">tap</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">tense</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">trill</div>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm ">N/A</button>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-left" style="margin-left: 4px;">voice</div>
+                                                </div>
+                                            </div> <!-- form-group -->
+                                        </div> <!-- col-sm-4 -->
+                                        <div class="col-sm-4">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--container -->
+<!-- =========================================================== Tools:Options:WordListsTab POP UP MODAL- DIALOG ================== -->
+<div class="container">
+    <h2>Tools:Options:WordListsTab</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myWordListsOptions">Word Lists Options</button>
+
+    <hr />
+    <div class="modal fade" id="myWordListsOptions" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">Word Lists Options</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Column Display Options</div>
+                                <div class="panel-body">
+                                    <h6>Specify the columns to display and their order</h6>
+
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="panel panel-default">
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Select All
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" checked="checked"> CV Pattern
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" checked="checked"> Phonectic
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" checked="checked"> Part of Speech
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" checked="checked"> Gloss
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Gloss (Secondary)
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" checked="checked"> Refernce
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" checked="checked"> PluralForm
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Data Source
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Data Source Path
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> Phonetic Source
+                                                            </label>
+                                                        </div>
+
+                                                    </div> <!-- form-group -->
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <button type="button" class="btn btn-primary" aria-label="Left Align">
+                                                    <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" aria-label="Left Align">
+                                                    <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+                                                </button>
+                                            </div> <!-- form-group -->
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">Column Changes</div>
+                                <div class="panel-body">
+                                    <p>
+                                        Use the following to control how the last changes
+                                        made to any existing word list will affect new word lists.
+                                    </p>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Save arranement of reordered columns as default order
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" checked="checked"><s>Save adjusted column widths as default widths</s>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" checked="checked"><s>Save adjusted column heading height as default height</s>
+                                            </label>
+                                        </div>
+                                    </div> <!-- form-group -->
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><s>Grid Lines</s></div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <label class="checkbox-inline">
+                                            <input type="radio" value="" />
+                                            <s>Vertical only</s>
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="radio" value="" />
+                                            <s>Both</s>
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                        <label class="checkbox-inline">
+                                            <input type="radio" value="" />
+                                            <s>Horizonal only</s>
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="radio" value="" />
+                                            <s>None</s>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--container -->
+<!-- =========================================================== Tools:Options:SortingTab POP UP MODAL- DIALOG ================== -->
+<div class="container">
+    <h2>Tools:Options:SortingTab</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySortingOptions">Sorting Options</button>
+
+    <hr />
+    <div class="modal fade" id="mySortingOptions" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">Sorting Options</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        To specify the default sort options for a specific type of list, choose one from the list and select the desired options.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bd-example">
+                                <!-- Word List Type -->
+                                <div class="btn-group" style="padding-bottom: 1em;">
+                                    <button type="button" class="btn btn-success">Word List Type</button>
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Dat Corpus</a></li>
+                                        <li><a href="#">Search Results</a></li>
+                                        <li><a href="#">Distribution Chart Search Results</a></li>
+                                    </ul>
+                                </div><!-- Word List Type -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Column Sort Options</div>
+                                <div class="panel-body">
+                                    <h6>Specify the columns to sort and in what order</h6>
+
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <table class="table table-hover table-bordered">
+                                                <thead>
+                                                    <tr class="active">
+                                                        <th>Column</th>
+                                                        <th>Ascending?</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox" checked="checked"> Phonetic
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox" checked="checked">
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox"> CV Pattern
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox" checked="checked">
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox"> Part of Speech
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox" checked="checked">
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox"> Gloss
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox" checked="checked">
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox"> Gloss (Secondary)
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox" checked="checked">
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox"> Reference
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox" checked="checked">
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox" checked="checked"> PluralForm
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <label>
+                                                                <input type="checkbox" checked="checked">
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <button type="button" class="btn btn-primary" aria-label="Left Align">
+                                                        <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary" aria-label="Left Align">
+                                                        <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+                                                    </button>
+                                                </div> <!-- form-group -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">Phonetic Sort Options</div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <label class="checkbox-inline">
+                                            <input type="radio" value="" checked="checked" />
+                                            Place or Backness
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                        <label class="checkbox-inline">
+                                            <input type="radio" value="" />
+                                            Manner or Height
+                                        </label>
+                                    </div>
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr class="active">
+                                                <th></th>
+                                                <th>1st</th>
+                                                <th>2nd</th>
+                                                <th>3rd</th>
+                                                <th>R/L</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Preceding
+                                                </td>
+                                                <td>
+                                                    <label class="checkbox-inline">
+                                                        <input type="radio" value="" checked="checked" />
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="checkbox-inline">
+                                                        <input type="radio" value="" />
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="checkbox-inline">
+                                                        <input type="radio" value="" />
+                                                    </label>
+                                                </td>
+
+                                                <td>
+                                                    <label>
+                                                        <input type="checkbox" checked="checked">
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Item:
+                                                </td>
+                                                <td>
+                                                    <label class="checkbox-inline">
+                                                        <input type="radio" value="" />
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="checkbox-inline">
+                                                        <input type="radio" value="" checked="checked" />
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="checkbox-inline">
+                                                        <input type="radio" value="" />
+                                                    </label>
+                                                </td>
+
+                                                <td>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Following:
+                                                </td>
+                                                <td>
+                                                    <label class="checkbox-inline">
+                                                        <input type="radio" value="" />
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="checkbox-inline">
+                                                        <input type="radio" value="" />
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="checkbox-inline">
+                                                        <input type="radio" value="" checked="checked" />
+                                                    </label>
+                                                </td>
+
+                                                <td>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="checkbox" style="padding-top: 1em;">
+                        <label>
+                            <input type="checkbox" checked="checked"> Save last manually specified sort options as the default.
+                        </label>
+                    </div>
+                    <p>For example, clicking column headings in the Data Corpus view will change the default options set on this tab for that view.</p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--container -->
+
+<div class="container">
+
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Ascending?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox" checked="checked"> Phonetic
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" checked="checked">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox"> CV Pattern
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" checked="checked">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox"> Part of Speech
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" checked="checked">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox"> Gloss
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" checked="checked">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox"> Gloss (Secondary)
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" checked="checked">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox"> Reference
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" checked="checked">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox" checked="checked"> PluralForm
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" checked="checked">
+                    </label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

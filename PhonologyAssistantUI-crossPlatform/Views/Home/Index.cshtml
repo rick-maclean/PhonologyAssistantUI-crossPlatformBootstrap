@@ -1,0 +1,103 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <h2>Getting Started With Phonology Assistant</h2>
+        <ul>
+            <li>Sample stuff for Phonology Assistant</li>
+            <li><a href="http://software.sil.org/phonologyassistant/">What is Phonology Assistant</a> used for</li>
+            <li>blah blah blah ya <a href="http://software.sil.org/phonologyassistant/resources/">resources</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4 ">
+        <h2>Overview</h2>
+        <ul>
+            <li><a href="https://software.sil.org/phonologyassistant/resources/">What are some things you might like to learn about phonologial analysis</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-4 ">
+
+        <div class="container">
+
+            <h2>What you Need</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myDataSourceTypes">Data Source Types</button>
+
+            <hr />
+            <div class="modal fade" id="myDataSourceTypes" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModal-label">Data Source Types</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <h3>Data source types</h3>
+                                <p>Phonology Assistant (PA) displays language data that has been collected using other programs. It does not maintain its own copy of the data.</p>
+                                <p>PA reads each data source when it opens a project. It rereads any data source that changes while a project is open.</p>
+                                <p>A project can consist of multiple data sources of different types. PA supports the following types of data sources:</p>
+                                <p></p>
+
+                                <ul class="list-unstyled lis">
+                                    <li class="list-group-item">
+                                        <p>
+                                            <strong>FW7</strong>
+                                            sources are not text files. A FieldWorks Language Explorer (FLEx) project is stored in a database. PA can access phonetic data in the
+                                            lexical entries if you specify the fields using the FieldWorks Data Source Properties dialog box.
+                                        </p>
+                                        <p>PA assumes the editing program is FLEx.</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Toolbox</strong> data sources are Standard Format files used in a Toolbox project.</p>
+                                        <p>A \_sh marker in the first line of the file distinguishes Toolbox from SFM data sources. Toolbox files are a subset of Standard Format files.</p>
+                                        <p>PA assumes the editing program is The Field Linguist's Toolbox.</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>SA</strong> data sources are audio files that have been transcribed using Speech Analyzer. </p>
+                                        <p>PA assumes the editing program is Speech Analyzer. </p>
+                                        <p> </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>SFM</strong> data sources are text files containing records, which consist of fields. A Standard Format marker identifies the beginning of each field. </p>
+                                        <p> PA makes no assumption about the editing program. You need to specify an editor in the Standard Format Data Source Properties dialog box.</p>
+                                        <p> </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>PAXML</strong>  data sources are XML files exported from PA.</p>
+                                        <p>
+                                            For example, a field linguist can export data and send the XML file to a consultant. The consultant
+                                            can create a new project and add the XML file as a data source.
+                                        </p>
+                                        <p>PA makes no assumption about the editing program. </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Tip</strong> </p>
+                                        <p>Edit Source Record describes jumping from PA to a record in the source data editor. </p>
+                                        <p> </p>
+                                    </li>
+                                </ul>
+                                <h3>Related Topcs</h3>
+                                <a href="#">Concepts overview</a>
+                                <a href="#">Project Settings</a>
+
+                            </div> <!-- container -->
+                            <p>For example, clicking column headings in the Data Corpus view will change the default options set on this tab for that view.</p>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--container -->
+
+    </div>
+</div> <!--row -->
